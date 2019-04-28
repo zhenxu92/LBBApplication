@@ -47,30 +47,6 @@ body {
   padding: 16px;
 }
 
-.signature-pad::before,
-.signature-pad::after {
-  position: absolute;
-  z-index: -1;
-  content: "";
-  width: 40%;
-  height: 10px;
-  bottom: 10px;
-  background: transparent;
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
-}
-
-.signature-pad::before {
-  left: 20px;
-  -webkit-transform: skew(-3deg) rotate(-3deg);
-          transform: skew(-3deg) rotate(-3deg);
-}
-
-.signature-pad::after {
-  right: 20px;
-  -webkit-transform: skew(3deg) rotate(3deg);
-          transform: skew(3deg) rotate(3deg);
-}
-
 .signature-pad--body {
   position: relative;
   -webkit-box-flex: 1;
@@ -105,10 +81,6 @@ canvas {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 8px;
-}
-
-#github img {
-  border: 0;
 }
 
 @media (max-width: 940px) {
